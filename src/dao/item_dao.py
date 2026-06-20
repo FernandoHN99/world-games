@@ -1,5 +1,6 @@
 import sqlite3
 from src.models.item.item import Item
+from src.dao import DB_PATH
 
 class Item_DAO:
     _instance = None
@@ -14,7 +15,7 @@ class Item_DAO:
         return cls._instance
 
     def _connect(self):
-        self.conn = sqlite3.connect('./databases/sqlite.db', check_same_thread=False)
+        self.conn = sqlite3.connect(DB_PATH, check_same_thread=False)
 
     def coletar_todos_itens_db(self):
         self.cursor = self.conn.cursor()

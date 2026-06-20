@@ -1,6 +1,7 @@
 import sqlite3
 from src.models.usuario.usuario import Usuario
 from src.models.contato.contato import Contato
+from src.dao import DB_PATH
 
 class Usuario_DAO:
     _instance = None
@@ -15,7 +16,7 @@ class Usuario_DAO:
         return cls._instance
 
     def _connect(self):
-        self.conn = sqlite3.connect('./databases/sqlite.db', check_same_thread=False)
+        self.conn = sqlite3.connect(DB_PATH, check_same_thread=False)
 
     def buscar_todos_users_db(self):
         self.cursor = self.conn.cursor()
