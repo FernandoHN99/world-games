@@ -1,6 +1,10 @@
 # Fernando Henriques Neto
 # RA:18.00931-0
 
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import streamlit as st
 from src.controllers.usuario_controller import Usuario_Controller
 from src.controllers.app_controller import App_Controller
