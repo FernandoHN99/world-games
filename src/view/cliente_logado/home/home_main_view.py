@@ -1,9 +1,9 @@
 import streamlit as st
-from models.util import Util
-from view.cliente_logado.home.loja_view import Loja_View
-from view.cliente_logado.home.carrinho_view import Carrinho_View
-from view.cliente_logado.info_cliente.contato_info_view import Contato_Info_View
-from view.cliente_logado.info_cliente.contato_info_view import Contato_Info_View
+from src.models.util import Util
+from src.view.cliente_logado.home.loja_view import Loja_View
+from src.view.cliente_logado.home.carrinho_view import Carrinho_View
+from src.view.cliente_logado.info_cliente.contato_info_view import Contato_Info_View
+from src.view.cliente_logado.info_cliente.contato_info_view import Contato_Info_View
 
 class Home_Main_View:
     def __init__(self, app_controller) -> None:

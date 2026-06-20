@@ -1,5 +1,5 @@
 import streamlit as st
-from models.util import Util
+from src.models.util import Util
 
 class Carrinho_View:
     # def __init__(self, usuario_controller, carrinho_de_compras) -> None:

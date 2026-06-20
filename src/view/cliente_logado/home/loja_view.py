@@ -1,5 +1,5 @@
 import streamlit as st
-from models.util import Util
+from src.models.util import Util
 
 class Loja_View:
     def __init__(self, app_controller) -> None:

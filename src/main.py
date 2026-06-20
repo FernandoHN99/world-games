@@ -2,13 +2,13 @@
 # RA:18.00931-0
 
 import streamlit as st
-from controllers.usuario_controller import Usuario_Controller
-from controllers.app_controller import App_Controller
-from view.cliente_deslogado.login_view import Login_View
-from view.cliente_deslogado.cadastro_view import Cadastro_View
-from view.cliente_logado.home.home_main_view import Home_Main_View
-from models.util import Util
-from models.enum import Paginas
+from src.controllers.usuario_controller import Usuario_Controller
+from src.controllers.app_controller import App_Controller
+from src.view.cliente_deslogado.login_view import Login_View
+from src.view.cliente_deslogado.cadastro_view import Cadastro_View
+from src.view.cliente_logado.home.home_main_view import Home_Main_View
+from src.models.util import Util
+from src.models.enum import Paginas
 
 # --------------------- COMEÇO ---------------------
 if __name__ == "__main__":

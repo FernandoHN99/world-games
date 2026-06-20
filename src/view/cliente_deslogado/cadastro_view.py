@@ -1,7 +1,7 @@
 import streamlit as st
-from models.contato.contato import Contato
-from models.usuario.usuario import Usuario
-from models.util import Util
+from src.models.contato.contato import Contato
+from src.models.usuario.usuario import Usuario
+from src.models.util import Util
 import datetime as dt
 
 class Cadastro_View:

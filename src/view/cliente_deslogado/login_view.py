@@ -1,6 +1,6 @@
 import streamlit as st
-from models.enum import Paginas
-from models.util import Util
+from src.models.enum import Paginas
+from src.models.util import Util
 
 class Login_View:
     def __init__(self, controller) -> None:
